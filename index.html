@@ -395,6 +395,13 @@
             .slide .metric-card, .slide .formula-box, .slide .toc-entry {
                 animation: none !important; opacity: 1 !important; transform: none !important;
             }
+            .content-single, .content-full {
+                transform: none !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                margin: 0 auto !important;
+            }
+            main#slides-container { width: 100%; }
         }
     </style>
 </head>
@@ -509,7 +516,7 @@
                             <div class="toc-num cyan">E</div>
                             <div class="toc-content">
                                 <span class="toc-title">Synthèse &amp; Décision</span>
-                                <span class="toc-page">Comparaison et messages cles</span>
+                                <span class="toc-page">Comparaison et messages clés</span>
                             </div>
                         </div>
                     </div>
@@ -519,10 +526,10 @@
                         <span class="level-indicator level-1">N1</span> Analogie &amp; intuition
                     </div>
                     <div style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem;">
-                        <span class="level-indicator level-2">N2</span> Concepts cles
+                        <span class="level-indicator level-2">N2</span> Concepts clés
                     </div>
                     <div style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem;">
-                        <span class="level-indicator level-3">N3</span> Details techniques
+                        <span class="level-indicator level-3">N3</span> Détails techniques
                     </div>
                 </div>
             </div>
@@ -752,7 +759,7 @@
                                 <text x="40" y="42" font-size="9" fill="#047857" font-weight="700">$I_W$</text>
 
                                 <!-- Legend -->
-                                <text x="10" y="190" font-size="9" fill="#64748b">Vert = inertie intra (compacite), Orange = inertie inter (separation)</text>
+                                <text x="10" y="190" font-size="9" fill="#64748b">Vert = inertie intra (compacité), Orange = inertie inter (séparation)</text>
                             </svg>
                         </div>
                     </div>
@@ -899,7 +906,7 @@
                                 <polygon points="319,87 322,95 330,95 324,100 327,108 319,103 311,108 314,100 308,95 316,95" fill="#7c3aed" stroke="white" stroke-width="1.5"/>
 
                                 <!-- Inertia evolution -->
-                                <text x="180" y="140" font-size="10" fill="#64748b" font-weight="700" text-anchor="middle">Evolution de $I_W$</text>
+                                <text x="180" y="140" font-size="10" fill="#64748b" font-weight="700" text-anchor="middle">Évolution de $I_W$</text>
                                 <line x1="40" y1="200" x2="320" y2="200" stroke="#cbd5e1" stroke-width="1"/>
                                 <line x1="40" y1="200" x2="40" y2="155" stroke="#cbd5e1" stroke-width="1"/>
                                 <polyline points="60,160 130,180 200,193 270,196 310,196" fill="none" stroke="#10b981" stroke-width="2.5"/>
@@ -911,7 +918,7 @@
                                 <text x="130" y="215" font-size="8" fill="#64748b" text-anchor="middle">2</text>
                                 <text x="200" y="215" font-size="8" fill="#64748b" text-anchor="middle">3</text>
                                 <text x="270" y="215" font-size="8" fill="#64748b" text-anchor="middle">4</text>
-                                <text x="180" y="225" font-size="8" fill="#94a3b8" text-anchor="middle">iterations</text>
+                                <text x="180" y="225" font-size="8" fill="#94a3b8" text-anchor="middle">itérations</text>
                             </svg>
                         </div>
                     </div>
@@ -1118,7 +1125,7 @@
                                     <tr>
                                         <td><strong>Saut moyen</strong><br><span style="font-size: 0.78rem; color: var(--text-muted);">average linkage</span></td>
                                         <td>$\frac{1}{|C_i||C_j|}\sum d(x, y)$</td>
-                                        <td>Equilibre</td>
+                                        <td>Équilibre</td>
                                     </tr>
                                     <tr class="best">
                                         <td><strong>Ward</strong><br><span style="font-size: 0.78rem; color: var(--text-muted);">augmentation de $I_W$</span></td>
@@ -1340,7 +1347,7 @@
                             </div>
                             <div class="metric-card warning" style="padding: 0.6rem;">
                                 <div class="metric-value" style="font-size: 1.4rem;">$\rho = -1$</div>
-                                <div class="metric-label">Liaison linéaire parfaite (negative)</div>
+                                <div class="metric-label">Liaison linéaire parfaite (négative)</div>
                             </div>
                         </div>
 
@@ -1403,7 +1410,7 @@
                                 <text x="55" y="144" font-size="10" fill="#64748b" text-anchor="end">Fr</text>
                                 <text x="55" y="184" font-size="10" fill="#64748b" text-anchor="end">Angl</text>
 
-                                <text x="140" y="215" font-size="9" fill="#94a3b8" text-anchor="middle" font-style="italic">Math &amp; Phys correlees, Fr &amp; Angl correlees</text>
+                                <text x="140" y="215" font-size="9" fill="#94a3b8" text-anchor="middle" font-style="italic">Math &amp; Phys corrélées, Fr &amp; Angl corrélées</text>
                             </svg>
                         </div>
                     </div>
@@ -1551,7 +1558,7 @@
                 <div class="grid-2">
                     <div>
                         <div class="card">
-                            <div class="card-title" style="font-size: 1rem;">Donnees brutes</div>
+                            <div class="card-title" style="font-size: 1rem;">Données brutes</div>
                             <table class="mt-1" style="font-size: 0.88rem;">
                                 <thead><tr><th>$i$</th><th>$X_1$</th><th>$X_2$</th></tr></thead>
                                 <tbody>
@@ -1574,7 +1581,7 @@
 
                     <div>
                         <div class="card" style="border-left: 4px solid var(--accent-orange);">
-                            <div class="card-title">&#128301; Equation caractéristique</div>
+                            <div class="card-title">&#128301; Équation caractéristique</div>
                             <div class="card-text">
                                 <p>$\det(\Sigma - \lambda I) = 0$ donne :</p>
                                 <div class="formula-box mt-1" style="padding: 0.5rem; font-size: 0.92rem;">
@@ -1633,7 +1640,7 @@
                         <tr>
                             <td><strong>Sortie</strong></td>
                             <td>$K$ clusters fixes</td>
-                            <td>Dendogramme &mdash; $K$ choisi a posteriori</td>
+                            <td>Dendogramme &mdash; $K$ choisi <em>a posteriori</em></td>
                             <td>$k$ axes principaux</td>
                         </tr>
                         <tr>
@@ -1798,9 +1805,19 @@
             if (Math.abs(diff) > 50) { diff > 0 ? nextSlide() : prevSlide(); }
         });
 
+        function resetTransforms() {
+            slides.forEach(s => {
+                const c = s.querySelector('.content-single, .content-full');
+                if (c) c.style.transform = '';
+            });
+        }
+
+        window.addEventListener('beforeprint', resetTransforms);
+        window.addEventListener('afterprint', () => autoFitSlide(slides[currentSlide]));
+
         function exportPDF() {
             document.title = 'Classification Non Supervisée — SupCom 2026';
-            autoFitAll();
+            resetTransforms();
             setTimeout(() => window.print(), 200);
         }
 
